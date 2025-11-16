@@ -1,0 +1,18 @@
+/*ARENAS TORRES JUAN EDUARDO
+#include <stdio.h>
+
+int main() {
+    float sueldo, nuevo;
+
+    printf("Ingresa el sueldo: ");
+    scanf("%f", &sueldo);
+
+    if (sueldo < 1000)
+        nuevo = sueldo * 1.15;
+    else
+        nuevo = sueldo * 1.12;
+
+    printf("Sueldo con aumento: %.2f\n", nuevo);
+
+    return 0;
+}
