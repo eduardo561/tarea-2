@@ -1,0 +1,18 @@
+/*ARENAS TORRES JUAN EDUARDO
+#include <stdio.h>
+
+int main() {
+    float dinero, tasa, monto;
+
+    printf("Cantidad invertida: ");
+    scanf("%f", &dinero);
+
+    printf("Tasa de interes mensual (ej. 0.05 para 5%%): ");
+    scanf("%f", &tasa);
+
+    monto = dinero + (dinero * tasa);
+
+    printf("Monto final al mes: %.2f\n", monto);
+
+    return 0;
+}
