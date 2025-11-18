@@ -1,0 +1,26 @@
+//Arenas Torres Juan Eduardo
+#include <stdio.h>
+
+int main() {
+    int N, pos = 0, neg = 0, nul = 0;
+
+    printf("Cantidad de elementos: ");
+    scanf("%d", &N);
+
+    int A[N];
+
+    for (int i = 0; i < N; i++) {
+        printf("A[%d] = ", i);
+        scanf("%d", &A[i]);
+
+        if (A[i] > 0) pos++;
+        else if (A[i] < 0) neg++;
+        else nul++;
+    }
+
+    printf("Positivos: %d\n", pos);
+    printf("Negativos: %d\n", neg);
+    printf("Nulos: %d\n", nul);
+
+    return 0;
+}
