@@ -1,0 +1,24 @@
+//Arenas Torres Juan Eduardo
+#include <stdio.h>
+
+int main() {
+    int n, positivos = 0, negativos = 0, nulos = 0;
+
+    for (int i = 1; i <= 100; i++) {
+        printf("Ingresa un numero: ");
+        scanf("%d", &n);
+
+        if (n > 0)
+            positivos++;
+        else if (n < 0)
+            negativos++;
+        else
+            nulos++;
+    }
+
+    printf("Positivos: %d\n", positivos);
+    printf("Negativos: %d\n", negativos);
+    printf("Nulos: %d\n", nulos);
+
+    return 0;
+}
