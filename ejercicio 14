@@ -1,0 +1,27 @@
+#include <stdio.h>
+//Arenas Torres Juan Eduardo
+int main() {
+    int N, x, contador = 0;
+
+    printf("Cantidad de elementos: ");
+    scanf("%d", &N);
+
+    int A[N];
+
+    for (int i = 0; i < N; i++) {
+        printf("A[%d] = ", i);
+        scanf("%d", &A[i]);
+    }
+
+    printf("¿Qué número deseas buscar?: ");
+    scanf("%d", &x);
+
+    for (int i = 0; i < N; i++) {
+        if (A[i] == x)
+            contador++;
+    }
+
+    printf("El numero %d aparece %d veces\n", x, contador);
+
+    return 0;
+}
