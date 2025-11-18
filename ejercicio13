@@ -1,0 +1,21 @@
+//Arenas Torres Juan Eduardo
+#include <stdio.h>
+
+int main() {
+    int N;
+
+    printf("Cantidad de elementos: ");
+    scanf("%d", &N);
+
+    int A[N], suma = 0;
+
+    for (int i = 0; i < N; i++) {
+        printf("A[%d] = ", i);
+        scanf("%d", &A[i]);
+        suma += A[i];
+    }
+
+    printf("La suma es: %d\n", suma);
+
+    return 0;
+}
